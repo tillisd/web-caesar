@@ -44,7 +44,7 @@ def index ():
     return form.format("")
 
 
-@app.route ("/", method=['POST'])
+@app.route ("/", methods=['POST'])
 def encrypt():
     form_rot = int(request.form['rot'])
     rot = int(rot)
